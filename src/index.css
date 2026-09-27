@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #030814;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom 3D & glow helpers */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.35);
+}
+
+.glow-cyan-md {
+  box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.45);
+}
+
+.glow-cyan-lg {
+  box-shadow: 0 0 55px -10px rgba(6, 182, 212, 0.55);
+}
+
+.glow-amber-md {
+  box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.4);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030814;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
